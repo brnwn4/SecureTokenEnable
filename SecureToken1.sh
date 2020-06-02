@@ -1,8 +1,8 @@
 #!/bin/sh
 # This script is intended to be used with JAMF Self Service. It will enable SecureToken for the currently logged in user account
-# and either add it to the list of to FileVault enabled users or enable FileVault using a Personal Recovery Key.
+# allowing FileVault2 to encrypt. 
 
-# Your policy must include script parameters for a SecureToken enabled administrator username and password. For more information
+# JAMF policy must include script parameters for a SecureToken enabled administrator username and password, ($4 and $5). For more information
 # on using script parameters, please see https://www.jamf.com/jamf-nation/articles/146/script-parameters.
 
 adminUser="$4"
